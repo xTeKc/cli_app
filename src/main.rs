@@ -28,3 +28,8 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
     Ok(())
 }
+
+struct Config {
+    query: String,
+    filename: String,
+}
