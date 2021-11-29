@@ -10,12 +10,12 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 
 pub struct Config {
-    query: String,
-    filename: String,
+    pub query: String,
+    pub filename: String,
 }
 
 impl Config {
-    fn new(args: &[String]) -> Result<Config, &str> {
+    pub fn new(args: &[String]) -> Result<Config, &str> {
         if args.len() < 3 {
             return Err("Not enough arguments");
         }
