@@ -9,7 +9,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-struct Config {
+pub struct Config {
     query: String,
     filename: String,
 }
